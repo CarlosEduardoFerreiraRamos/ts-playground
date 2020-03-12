@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start": "tsc -w --preserveWatchOutput",
+    "start": "nodemon -w index.ts --exec \"tsc && node ./dist/index.js\"",
     "watch": "nodemon -w dist/ index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
